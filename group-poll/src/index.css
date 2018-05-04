@@ -1,5 +1,9 @@
 body {
-  margin: 0;
+  margin: 20px;
   padding: 0;
   font-family: sans-serif;
+  background-color: #ffffff;
+}
+.ui.primary.button, .ui.primary.buttons .button {
+  width: 100%;
 }
