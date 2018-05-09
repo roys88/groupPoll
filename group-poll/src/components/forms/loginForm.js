@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import {Form, Button} from 'semantic-ui-react';
 import propTypes from 'prop-types';
 import Validator from 'validator';
@@ -76,8 +77,8 @@ class LoginForm extends Component {
                             />
                     {errors.password && <InlineError text={errors.password} />
                     }
-                            </Form.Field>
-
+                    </Form.Field>
+                    <Link to='/resetPass' exact >Forget Password?</Link>
                 <Button primary>Login</Button>
             </Form>
 

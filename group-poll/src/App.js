@@ -7,6 +7,7 @@ import {BrowserRouter,
 
 import HomePage from './components/pages/homePage.js';
 import LoginPage from './components/pages/loginPage.js';
+import RegistrationPage from './components/pages/registrationPage';
 
 
 class App extends Component {
@@ -16,6 +17,7 @@ class App extends Component {
             <div className="App">
             <Route exact path='/' component={HomePage} />
             <Route exact path='/login' component={LoginPage} />
+            <Route exact path='/register' component={RegistrationPage} />
             </div>
             </BrowserRouter>
     );
